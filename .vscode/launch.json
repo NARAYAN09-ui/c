@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/narayanpatel/c/lect1",
-      "program": "/Users/narayanpatel/c/lect1/build/Debug/outDebug"
+      "cwd": "/Users/narayanpatel/c/lect1/narayan",
+      "program": "/Users/narayanpatel/c/lect1/narayan/build/Debug/outDebug"
     }
   ]
 }
