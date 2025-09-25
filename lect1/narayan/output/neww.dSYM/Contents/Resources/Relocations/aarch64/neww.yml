@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/narayanpatel/c/lect1/narayan/output/neww'
+relocations:     []
+...
