@@ -1,23 +1,29 @@
 #include<iostream>
-using namespace std;
-class test
-{
-private:
-   int a;
-   int b;
-public:
-    
-void sat_value(){
-    a = 22;
-    b = 33;
-} friend float mean(test t);
+using namespace std ;
+class pushpa;
+class sahil{
+    int a;
+    public :
+ void getdata(int x){
+     a=x;
+ }
+ friend void add(pushpa&, sahil&);
 };
-float mean(test t){
-    return (t.a + t.b)/2.0;
-}   
-int main(){
-    test t1;
-    t1.sat_value();
-    cout<<"Mean value is: "<<mean(t1)<<endl;
-    return 0;
+class pushpa{
+int a;
+public :
+void getdata(int y){
+    a=y;
+}
+friend void add(pushpa&,sahil&);
+};
+void add(pushpa &p, sahil &s){
+    cout<<"sum of pushpa and sahil's age: "<<s.a+p.a<<endl;
+}
+int main (){
+    pushpa p;
+    sahil s;
+    p.getdata(19);
+    s.getdata(20);
+    add(p,s);
 }
