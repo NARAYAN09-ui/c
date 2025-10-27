@@ -5,18 +5,18 @@ int main() {
     printf("Enter number of rows: ");
     scanf("%d", &n);
 
-    int pascal[n][n]; // 2D array to store Pascal's triangle
+    int pascal[n][n]; 
 
     for (int i = 0; i < n; i++) {
         for (int j = 0; j <= i; j++) {
             if (j == 0 || j == i)
-                pascal[i][j] = 1; // First and last elements are 1
+                pascal[i][j] = 1;
             else
                 pascal[i][j] = pascal[i - 1][j - 1] + pascal[i - 1][j];
         }
     }
 
-    // Print the triangle
+   
     for (int i = 0; i < n; i++) {
         for (int j = 0; j <= i; j++)
             printf("%d ", pascal[i][j]);
